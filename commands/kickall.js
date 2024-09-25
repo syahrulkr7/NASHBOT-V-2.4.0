@@ -3,7 +3,7 @@ module.exports = {
   description: 'Remove all group members.',
   usage: '[nashPrefix]kickall',
   nashPrefix: true,
-  role: 2,
+  role: "admin",
   cooldowns: 5,
   aliases: ['bura'],
   execute: async (api, event, args) => {

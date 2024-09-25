@@ -7,6 +7,7 @@ module.exports = {
   description: 'Sends a notification message to all groups',
   usage: '[nashPrefix]sendnoti [Text]',
   nashPrefix: true,
+  role: "admin",
   execute: async (api, event, args) => {
     const threadList = await api.getThreadList(100, null, ['INBOX']);
     const customMessage = args.join(' ');

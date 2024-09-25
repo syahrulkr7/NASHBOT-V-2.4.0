@@ -3,7 +3,7 @@ module.exports = {
     description: "Add a user to the group chat using their UID",
     nashPrefix: false,
     version: "1.0.0",
-    role: 0,
+    role: "admin",
     cooldowns: 5,
     async execute(api, event, args) {
         const { threadID, messageID } = event;
